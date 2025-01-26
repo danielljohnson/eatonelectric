@@ -1,0 +1,94 @@
+
+/* Fonts */
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Reset */
+html, body, p, ul, li, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  background-image: url("images/pexels-gapeppy1-26348259.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 24px 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: white;
+  font-size: 24px;
+}
+
+h2 {
+  color: white;
+  font-size: 48px;
+  margin: 36px;
+  padding: 24px 48px 24px 48px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+}
+
+h3 {
+  color: #030c05;
+  font-size: 24px;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+a {
+  color: #7b462e;
+}
+
+p {
+  color: #030c05;
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 36px;
+  gap: 36px;
+}
+
+.columns div {
+  flex: 1;
+  padding: 24px 48px 24px 48px;
+  background-color: #f3ddd3;
+  border-radius: 12px;
+}
