@@ -19,16 +19,18 @@
 }
 
 /* Reset */
-html, body, p, ul, li, h1, h2 {
+html, body, p, ul, li, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
 
 .content {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("images/pexels-gapeppy1-26348259.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 36px;
 }
 
 nav {
@@ -55,15 +57,20 @@ h2 {
 h3 {
   color: #030c05;
   font-size: 24px;
+  margin: 0 0 24px;
 }
 
-ul {
+h4 {
+  margin: 0 0 12px;
+}
+
+nav ul {
   display: flex;
   gap: 24px;
   list-style: none;
 }
 
-li a {
+nav li a {
   color: white;
   font-size: 24px;
   text-decoration: none;
@@ -76,19 +83,39 @@ a {
 p {
   color: #030c05;
   font-size: 18px;
+  line-height: 24px;
   margin: 0 0 12px 0;
 }
 
 .columns {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
-  margin: 36px;
+  margin: 36px 36px 0;
   gap: 36px;
+  align-items: start;
 }
 
 .columns div {
   flex: 1;
-  padding: 24px 48px 24px 48px;
-  background-color: #f3ddd3;
+  padding: 36px 48px 36px 48px;
+  background-color: rgb(243, 221, 211, .98);
   border-radius: 12px;
+  margin-bottom: 36px;
+}
+
+.columns div:last-child {
+  margin-bottom: 0;
+}
+
+.columns ul {
+  margin: 0 0 12px 24px;
+}
+
+.columns ul:last-child {
+  margin: 0 0 0 24px;
+}
+
+.columns ul li {
+  font-size: 18px;
+  line-height: 24px;
 }
